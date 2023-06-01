@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link name="viewport" content="width=device-width">
+        <title>netflix</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            body{
+                background-image: url("images/netflix-image.jpg");
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .title{
+                color: white;
+                font-size: 60px;
+                text-align: center;
+                margin-top: 150px;
+            }
+            h2{
+                color: white;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 10px;
+            }
+            h4{
+                color: white;
+                text-align: center;
+                margin-top: 20px;
+                font:bold;
+                margin-bottom: 20px;
+            }
+            input{
+                background-color: white;
+                text-align: center;
+                margin-left: 450px;
+            }
+            h1{
+                color: red;
+                font-size: 55px;
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+            .right-side{
+                text-align: right;
+                margin-top: -60px;
+                margin-right: 20px;
+            }
+            .lang{
+                color: white;
+                background-color: black;
+                padding: 7px;
+                margin-right: 7px;
+            }
+        </style>
+    </head> 
+    <body>
+        <h1>NETFLIX</h1>
+        <div class="right-side">
+            <select class="lang">
+                <option>English<i class="bi bi-caret-down-fill"></i></option>
+                <option>Hindi</option>
+            </select>
+            <button class="btn btn-danger">sign in</button>
+        </div>
+        <h1 class="title">Unlimited movies, TV <br> shows and more.</h1>
+        <h2>Watch anywhere. Cancel anytime.</h2>
+        <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
+        <div class="input-group mb-2">
+            <input type="email" required name="email" placeholder="email address" style="width: 450px;">
+            <button class="btn input-group-text" style="color: white; background-color: red;">Get started <i class="bi bi-chevron-right"></i></button>
+        </div>
+    </body>
+</html>

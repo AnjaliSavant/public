@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook login</title>
+        <meta name="viewport" initial-scale="1.0" content="width=device-width">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <style>
+        form{
+            border: 1px solid rgb(249, 241, 241);
+            width: 450px;
+            height: 320px;
+            text-align: center;
+            margin-left: 500px;
+            margin-top:10px;
+            box-shadow: 2px 2px 2px 2px rgb(233, 228, 228);
+            border-radius: 10px;
+            background-color: white;
+        }
+        body{
+            background-color: hwb(0 96% 2%);
+             /* width: 300px;
+            height: 300px;  */
+            margin-top: 50px;
+        }
+        div{
+            text-align: center;
+        }
+        h1{
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color: blue;
+            /* font-weight: bold; */
+            margin-left: 50px;
+        }
+        h3{
+            font-family:'Times New Roman', Times, serif;
+            padding: 10px;
+
+        }
+        .form-div{
+            width: 350px;
+            height: 250px;
+            text-align: center;
+            margin-left: 50px;
+            padding: 5px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+    </head>
+    <body>
+    <div>
+        <h1>Facebook</h1>
+        <form>
+            <div class="form-div">
+                <h3>Log in to Facebook</h3>
+            <div>
+                <input type="email" name="email" placeholder="email address or phone number" required class="form-control">
+            </div>
+            <br>
+            <div>
+                <input type="password" name="password" placeholder="password" required class="form-control">
+            </div><br>
+            <div>
+                <button type="submit" class="btn btn-primary btn-lg w-100">Log in</button>
+            </div>
+            <br>
+            <a href="#">Forgotten account? · Sign up for Facebook</a>
+            </div>
+        </form>
+    </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            fieldset
+            {
+                width: 400px;
+                height: 400px;
+                border-bottom: none;
+                border-left: none;
+                border-right: none;
+
+                margin-top: 20px;
+        }
+        legend{
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 2px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+        .registrationform{
+            border: 1px solid gray;
+            box-shadow: 2px 2px 3px black;
+            padding: 5px;
+            margin: 5px;
+        }
+            
+        </style>
+    </head>
+    <body >
+        <fieldset>
+            <legend>Registration form</legend>
+            <form class="registrationform">
+            
+                <dl>
+                    <dt>Your comments: </dt>
+                    <dd style="padding-left: 15px;">
+                        <textarea rows="5"></textarea>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <dt>License terms</dt>
+                        <dd>
+                            <textarea rows="5" disabled>Please read terms and services ..!!</textarea>
+                        </dd>
+                    </dt>
+                   
+                        <dt>
+                            <input type="checkbox" style="font-size: large;"> I accepted
+                        </dt>
+                    
+            </dl>
+
+            <button>Register</button>
+            </form>
+        </fieldset>
+        
+
+        <div>
+            5<span class="bi bi-star-fill"></span>
+            <meter min="1" max="5" value="5">3000</meter><br>
+            4<span class="bi bi-star-fill"></span>
+            <meter min="1" max="100" low="40" high="80" value="30">100</meter>
+        </div>
+
+        <dl>
+            <dt>
+                downloading
+                <progress></progress>
+            </dt>
+            <dt>
+                Progress
+                <progress min="1" max="100" value="30"></progress>
+            </dt>
+            <dt>
+                Progress
+                <progress min="1" max="100" value="56"></progress>
+            </dt>
+        </dl>
+        
+    </body>
+</html>
+
+

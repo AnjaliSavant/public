@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+       form table{
+            padding: 5px;
+            font-size: 15px;
+            margin-bottom: 20px;
+            font-family: arial;
+        }
+        legend{
+            text-align: center;
+            box-shadow: 2px 2px 2px gray;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+       <legend>Registration of HTML</legend>
+   <form>
+    <table width="500" cellspacing="5" cellpadding="5">
+        <tr>
+            <td>
+                Name:
+            </td>
+            <td>
+                <input type="text" placeholder="Name" pattern="\w{1,20}\s\w{1,10}\s?\w{1,10}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Phone Number:
+            </td>
+            <td>
+                <input type="Phone" placeholder="Phone Number" pattern="\+91\d{10}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <input type="Email" placeholder="Email" pattern="\w{1,15}\@\w{3,4}\.\w{2,5}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input type="Password" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               Gender:
+            </td>
+            <td>
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Date of Birth:
+            </td>
+            <td>
+                <input type="date">
+            </td>
+            <tr>
+                <td>
+                    Hobbies:
+                </td>
+                <td>
+                   <input type="checkbox"singing>Singing
+                   <input type="checkbox"cricket>cricket
+                   <input type="checkbox"playing>Playing
+                </td>  
+            </tr>
+        </tr>
+        <tr>
+            <td>
+               Educational Qualification:
+            </td>
+            <td>
+               <select>
+                <option>Select option</option>
+                <option>10+2</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>MAC IT</option>
+                <option>BAC IT</option>
+
+               </select>
+            </td>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <textarea rows="5" col="17" placeholder="Address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Sumbit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+    </table>
+   </form>
+    </fieldset>
+   
+</body>
+</html>

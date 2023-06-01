@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>instagram</title>
+        <meta name="viewport" device="width=device-width">
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <style>
+            body{
+                height: 300px;
+            }
+            form{
+                display:grid;
+                grid-template-columns: 6fr 6fr;
+
+            }
+            .insta-left{
+               text-align: right;
+               margin-top: 20px;
+            }
+           .instagram{
+            display:grid;
+            grid-template-columns: 6fr 6fr;
+           }
+           .insta-right{
+            border: 1px solid gray;
+             width: 350px; 
+            text-align: center;
+            margin-top: 40px;
+            margin-right: 30px;
+           }
+           form{
+            margin: 20px;
+            width: 100%;
+            margin-top: 30px;
+           }
+           input{
+
+            width: 250px;
+           }
+           .input-textbox{
+            margin-top: 30px;
+            text-align: center;
+            color: gray;
+            /* background-color: rgb(228, 214, 214); */
+            font-size: small;
+            border-radius: 3px;
+            padding: 5px;
+           }
+           .input-textbox1{
+            margin-top: 5px;
+            text-align: center;
+            color: gray;
+            /* background-color: rgb(228, 214, 214); */
+            font-size: small;
+            border-radius: 3px;
+            padding: 5px;
+           }
+           .fb{
+            color: blue;
+            font-size: bold;
+           }
+           a{
+            text-decoration: none;
+           }
+           .instagram{
+            text-align: right;
+            padding-top: 30px;
+            padding-right: 80px;
+           }
+           fp{
+            font-size: smaller;
+            color: gray;
+            text-decoration: none;
+            color: gray;
+            text-decoration-line: none;
+            text-anchor: middle;
+           }
+        </style>
+    </head>
+    <body>
+                    <div class="instagram">
+                    <div>
+                    <img src="images/instagram1.png">
+                    </div>
+                    <div class="insta-right">
+                        <form>
+                        <div style="margin-top: 30px; text-align: center;">
+                        <img src="images/instagram2.png">
+                        </div>
+                        <br>
+                        <div class="input-textbox">
+                            <input type="email" name="email" placeholder="phonenumber, email or username" required>
+                        </div>
+                        <br>
+                        <div class="input-textbox1">
+                            <input type="password" name="password" placeholder="password" required class="mt-2">
+                        </div>
+                        <br>
+                        <div>
+                            <button class="btn btn-primary mt-2 w-100">Log In</button>
+                        </div>
+                        <br>
+                        <div>
+                            <hr style="width:100%;">
+                        </div>
+                        <br>
+                        <div class="fb">
+                            <a href="#"><i class="bi bi-facebook"></i> Login with facebook</a>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="fp">
+                            <a href="#">forgot password?</a>
+                        </div>
+                    </form>
+                </div>
+         </div>
+    </body>
+</html>

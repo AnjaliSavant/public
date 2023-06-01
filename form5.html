@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            margin-top: 20px;
+        }
+        form {
+            border:1px solid gray;
+            padding: 20px;
+            width: 300px;
+        }
+        #UserName:invalid+div {
+           display: block;
+        }
+        #UserName:valid+div {
+            display: none;
+        }
+        #Password:invalid+div {
+            display: block;
+        }
+        #Password:valid+div {
+            display: none;
+        }
+        #Age:in-range+div {
+            display: none;
+        }
+        #Age:out-of-range+div {
+            display: block;
+        }
+        #terms:checked+span {
+            color:green;
+        }
+        #terms+span {
+            color:red;
+        }
+        #terms~button {
+            display: none;
+        }
+        #terms:checked~button {
+            display: block;
+        }
+         #UserName:invalid {
+            border: 1px solid red;
+            box-shadow: 2px 2px 2px red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="mb-3">
+            <label for="UserName" class="form-label">User Name</label>
+            <div>
+                <input type="text" required class="form-control" id="UserName">
+                <div class="text-danger">User Name Required</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Password" class="form-label">Password</label>
+            <div>
+                <input type="password" pattern="[A-Z]{4,10}" class="form-control" id="Password">
+                <div class="text-warning">Password 4 to 10 Chars Uppercase only</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="Age" class="form-label">Age</label>
+            <div>
+                <input type="number" id="Age" class="form-control" min="15" max="30">
+                <div class="text-danger">Age 15 to 30 Only</div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Terms of Service</label>
+            <div>
+                <textarea class="form-control" disabled>Read our terms of service</textarea>
+            </div>
+            <div class="mt-2">
+                <input type="checkbox" class="form-check-input" id="terms"> <span>I Accept</span>
+                <button class="btn btn-primary mt-2 w-100">Register</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+<hr>
+<br>
+<br>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #password:invalid+ div{
+                display: block;
+            }
+
+            #password:valid+ div{
+                display: none;
+            }
+
+            #username:invalid+div{
+                display: block;
+            }
+
+            #username:valid+div{
+                display: none;
+            }
+            #terms:checked+span{
+                color: green;
+            }
+            #terms:span{
+                color: red;
+            }
+            #terms:checked~button{
+                display: block;
+            }
+            #terms:button{
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <div>
+                <label for="username" class="form-label">username</label>
+                <div>
+                    <input type="text" class="form-control" name="username" id="username" required>
+                    <div class="text-danger">please fill username</div>
+                </div>
+            </div>
+
+            <div>
+                <label for="password" class="form-label">password</label>
+                <div>
+                    <input type="password" class="form-control" name="password" id="password" required>
+                    <div class="text-warning">Invalid password</div>
+                </div>
+                
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Terms of Service</label>
+                <div>
+                    <textarea class="form-control" disabled>Read our terms of service</textarea>
+                </div>
+                <div class="mt-2">
+                    <input type="checkbox" class="form-check-input" id="terms"> <span>I Accept</span>
+                    <button class="btn btn-primary mt-2 w-100">Register</button>
+                </div>
+            </div>
+           
+        </form>
+    </body>
+</html>
